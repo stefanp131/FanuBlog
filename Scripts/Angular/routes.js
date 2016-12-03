@@ -16,6 +16,10 @@
 	    templateUrl: "Post3.html",
 	    controller: "post3-ctrl"
 	})
+	.when("/post4", {
+	    templateUrl: "Post4.html",
+	    controller: "post3-ctrl"
+	})
     .when("/about-me", {
         templateUrl: "AboutMe.html",
         controller: "about-ctrl"
