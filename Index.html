@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="gallery-app">
+<head>
+    <title>Gallery For Fun</title>
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body ng-controller="main-ctrl">
+    <div id="container" class="container">
+        <hr />
+        <div id="header" class="row">
+            <div class="col-md-4">
+                <a href="#">
+                    <img ng-src="Images/Logo.jpg" class="img-responsive" />
+                </a>
+            </div>
+            <div class="col-md-offset-1 col-md-6">
+                <ul class="nav nav-pills">
+                    <li> <a href="#"><h1>Home</h1></a></li>
+                    <li> <a href="#/about-me"><h1>About me</h1></a></li>
+                    <li><a href="#/poems"><h1>Poems</h1></a></li>
+                </ul>
+            </div>
+        </div>
+        <hr />
+        <div id="content" class="row">
+            <div ng-view>
+            </div>
+        </div>
+        <hr />
+        <div id="footer" class="row">
+            <div class="col-md-offset-5 col-md-3">
+                <span class="label label-primary">Made by Fanu Paravanu {{2015+1}}</span>
+            </div>
+        </div>
+        <hr />
+    </div>
+    <script src="Scripts/Angular/angular.js"></script>
+    <script src="Scripts/Angular/angular-route.js"></script>
+    <script src="Scripts/Angular/gallery-app.js"></script>
+    <script src="Scripts/Angular/main-ctrl.js"></script>
+    <script src="Scripts/Angular/home-ctrl.js"></script>
+    <script src="Scripts/Angular/post1-ctrl.js"></script>
+    <script src="Scripts/Angular/post2-ctrl.js"></script>
+    <script src="Scripts/Angular/post3-ctrl.js"></script>
+    <script src="Scripts/Angular/about-ctrl.js"></script>
+    <script src="Scripts/Angular/poems-ctrl.js"></script>
+    <script src="Scripts/Angular/routes.js"></script>
+    <script src="Scripts/jquery-3.1.1.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>
