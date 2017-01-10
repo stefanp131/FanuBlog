@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="gallery-app">
 <head>
     <meta charset="utf-8">
@@ -11,17 +11,20 @@
     <div id="container" class="container">
         <hr />
         <div id="header" class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <a href="#">
                     <img ng-src="Images/Logo.jpg" class="img-responsive" />
                 </a>
             </div>
-            <div class="col-md-offset-1 col-md-6">
-                <ul class="nav nav-pills">
-                    <li> <a href="#"><h1>Home</h1></a></li>
-                    <li> <a href="#/about-me"><h1>About me</h1></a></li>
-                    <li><a href="#/poems"><h1>Poems</h1></a></li>
-                </ul>
+            <div class="col-md-offset-1 col-md-8 hidden-xs nav nav-pills btn-group">                
+                    <a class="btn btn-primary col-md-4" href="#"><h1>Home</h1></a>
+                    <a class="btn btn-primary col-md-4" href="#/about-me"><h1>About me</h1></a>
+                    <a class="btn btn-primary col-md-4" href="#/poems"><h1>Poems</h1></a>                
+            </div>
+            <div class="col-xs-offset-2 col-xs-8 visible-xs nav nav-pills btn-group-vertical">                
+                     <a id="home" class="btn btn-primary" href="#"><h1>Home</h1></a>
+                     <a id="about-me" class="btn btn-primary" href="#/about-me"><h1>About me</h1></a>
+                     <a id="poems" class="btn btn-primary" href="#/poems"><h1>Poems</h1></a>                
             </div>
         </div>
         <hr />
